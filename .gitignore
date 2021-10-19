@@ -1,5 +1,3 @@
 node_modules
 
-package-localhost.json
-package-heroku.json
-package.json
+*.json
