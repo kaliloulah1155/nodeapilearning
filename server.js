@@ -9,7 +9,9 @@ const app = express();
 
 app.use(express.json()); 
 
- 
+ app.get('/',(req,res)=>{
+     res.send("KONATE IBRAHIMA");
+ });
  
 app.use('/api/v1/tours', tourRoute);
 
