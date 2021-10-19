@@ -6,8 +6,10 @@ dotenv.config({path:'./config.env'});
 const Tour=require('./../../models/tourModel');
 
 const DB=process.env.DATABASE.replace('<PASSWORD>',process.env.DATABASE_PASSWORD);   //for cloud atlas connexions
+const DB_LOCAL=process.env.DATABASE_LOCAL;   //for local connexion
+
  
-mongoose.connect(DB,{   //use DB or DB_LOCAL
+mongoose.connect(DB_LOCAL,{   //use DB or DB_LOCAL
     useNewUrlParser:true,
     useCreateIndex:true,
     useFindAndModify:false
