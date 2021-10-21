@@ -1,9 +1,10 @@
 
 const mongoose=require('mongoose');
 const dotenv=require('dotenv');
+dotenv.config({path:'./config.env'});
 const express = require('express');
 const tourRoute=require('./../4-natours/routes/tourRoutes');
-dotenv.config({path:'./config.env'});
+
 
 const app = express();
 
