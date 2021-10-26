@@ -29,7 +29,7 @@ exports.getAllTours = async (req, res) => {
 
 
 
-    //SEND QUERY
+    //SEND RESPONSE
     res.status(200).json({
       status: 'success',
       results: tours.length,
