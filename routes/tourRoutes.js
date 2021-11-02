@@ -1,6 +1,7 @@
 const express = require('express');
 const tourController = require('./../../4-natours/controllers/tourController');
 
+
 const router = express.Router();
 
 router.route('/top-5-cheap')
