@@ -22,7 +22,7 @@ mongoose.connect(DB_LOCAL,{   //use DB or DB_LOCAL
 
 //READ JSON FILE
 
-const tours=JSON.parse(fs.readFileSync(`${__dirname}/tours-simple.json`,'utf-8'));
+const tours=JSON.parse(fs.readFileSync(`${__dirname}/tours.json`,'utf-8'));
 
 ///IMPORT DATA INTO DB
 const importData=async()=>{
@@ -53,3 +53,7 @@ if(process.argv[2] ==='--import'){
     deleteData();
 }
 //console.log(process.argv);
+
+
+//cmd : node .\dev-data\data\import-dev-data.js --delete
+//cmd : node .\dev-data\data\import-dev-data.js --import
